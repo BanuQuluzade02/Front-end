@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRG Intellect School - Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 900px;
+      height: 500px;
+      margin: 50px auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .left-panel {
+      background: linear-gradient(to bottom right, #0033cc, #0066ff);
+      color: white;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .left-panel h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .left-panel p {
+      font-size: 18px;
+    }
+
+    .right-panel {
+      flex: 1;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .right-panel .icon {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .right-panel h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .right-panel h3 span {
+      color: #007bff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #0066ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0051cc;
+    }
+
+    .signup {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .signup a {
+      color: #0066ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h2>BRG INTELLECT SCHOOL</h2>
+      <p>Welcome to Community</p>
+    </div>
+    <div class="right-panel">
+      <div class="icon">&#128100;</div>
+      <h3>Get Started From <span>Login</span> Below</h3>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <div class="remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember me</label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p class="signup">Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+  </div>
+</body>
+</html>
