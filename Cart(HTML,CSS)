@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colored Cards</title>
+  <link rel="stylesheet" href="stayll.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card primary">
+      <h3>Primary Card</h3>
+      <a href="#">View Details</a>
+    </div>
+    <div class="card warning">
+      <h3>Warning Card</h3>
+      <a href="#">View Details</a>
+    </div>
+    <div class="card success">
+      <h3>Success Card</h3>
+      <a href="#">View Details</a>
+    </div>
+    <div class="card danger">
+      <h3>Danger Card</h3>
+      <a href="#">View Details</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.primary { background-color: #4e73df; }
+.warning { background-color: #f6c23e; }
+.success { background-color: #1cc88a; }
+.danger  { background-color: #e74a3b; }
+
+.card a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card a::after {
+  content: "›";
+  margin-left: 5px;
+}
